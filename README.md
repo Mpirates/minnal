@@ -56,7 +56,7 @@
 ## Deploy
 You can deploy this bot anywhere.
 
-<i>**[Watch Deploying Tutorial...](https://youtu.be/1G1XwEOnxxo)**</i>
+<i>**[Watch Deploying Tutorial.]()**</i>
 
 <details><summary>Deploy To Heroku</summary>
 <p>
@@ -70,7 +70,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/EvamariaTG/evamaria
+git clone https://github.com/Mpirates/IMDB-BOT
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -107,10 +107,13 @@ python3 bot.py
 • /broadcast - to broadcast a message to all Eva Maria users
 • /batch - to create link for multiple posts
 • /link - to create link for one post
+• /tr - to translator specific language
+• /json - to get json details of a message
+• /purge - delete all the message from the spesifed message
 ```
 ## Support
 [![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/FPHDMOVE)
-[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/FILIMPIRATESGROUP)
+[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/FilmPiratesGroup)
 
 ## Credits 
 * [![ᴩʀᴏꜰᴇꜱᴇʀ](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://t.me/The_user_death)
