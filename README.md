@@ -1,5 +1,3 @@
-<p align="center">
-  <img src="" alt="ᴩʀᴏꜰᴇꜱᴇʀ">
 </p>
 <h1 align="center">
   <b>ᴩʀᴏꜰᴇꜱᴇʀ</b>
