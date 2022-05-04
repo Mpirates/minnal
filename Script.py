@@ -1,11 +1,9 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>
 𝙸𝚝'𝚜 ᴠᴇʀy ᴇᴀꜱy ᴊᴜꜱᴛ ᴀᴅᴅ ᴛᴏ ɪɴ yᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ,
-ᴛʜᴀᴛꜱ ᴀʟʟ ɪ'ʟʟ  ᴩʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇꜱ ᴛʜᴇʀᴇ 😎"""
+ᴛʜᴀᴛꜱ ᴀʟʟ ɪ'ʟʟ  ᴩʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇꜱ ᴛʜᴇʀᴇ 😎 Then you will see my power"""
 
-    HELP_TXT = """Hey {}
-
-<b>Here Is The Help For My Commands.</b>"""
+    HELP_TXT = """Hey {}"""
 
     ABOUT_TXT = """<b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/The_user_death'>ᴩʀᴏꜰᴇꜱᴇʀ</a>
