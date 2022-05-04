@@ -23,6 +23,19 @@
 - [x] Spelling Check Feature
 - [x] File Store
 
+## NEW Features
+
+- [x] json
+- [ ] memes
+- [ ] pin message
+- [ ] purge
+- [ ] telegraph
+- [ ] paste
+- [ ] zombies
+- [ ] torrent
+- [ ] Google translator
+- [ ] url shoter ..etc 
+
 
 
 ### Required Variables
