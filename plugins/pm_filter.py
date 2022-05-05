@@ -496,16 +496,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
             InlineKeyboardButton('G-Trans', callback_data='gtrans')
             ],[
+            InlineKeyboardButton('Restrict', callback_data='restric'),
             InlineKeyboardButton('Info', callback_data='info'),
-            InlineKeyboardButton('Inline', callback_data='inline'),
-            InlineKeyboardButton('Memes', callback_data='memes')
+            InlineKeyboardButton('Search', callback_data='search')
             ],[
             InlineKeyboardButton('Paste', callback_data='paste'),
             InlineKeyboardButton('Pin', callback_data='pin'),
             InlineKeyboardButton('Purge', callback_data='purge')
-            ],[
-            InlineKeyboardButton('Restrict', callback_data='restric'),
-            InlineKeyboardButton('Search', callback_data='search')
             ],[
             InlineKeyboardButton('Share-Text', callback_data='sharetext'),
             InlineKeyboardButton('TTS', callback_data='tts'),
@@ -611,6 +608,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Batch', callback_data='batch'),
             InlineKeyboardButton('Alive', callback_data='alive')
+            ],[
+            InlineKeyboardButton('Memes', callback_data='memes'),
+            InlineKeyboardButton('Inline', callback_data='inline')
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
