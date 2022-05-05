@@ -238,9 +238,9 @@ these are the extra features of this bot
     COR_TXT = """Creators ❤
 - Thanks To Dan For His Awesome Library
 - Thanks To Mahesh For His Awesome Media-Search-bot
-- Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome Unlimited Filter Bot And AutoFilterBoT
-- Thanks To [Eva](https://t.me/TeamEvamaria) A amazing combination of this repo
-- Thanks To [Sangeeth](https://t.me/sangeeth006) To create me 
+- Thanks To <a href='https://github.com/trojanzhex'>Trojanz</a> for Their Awesome Unlimited Filter Bot And AutoFilterBoT
+- Thanks To <a href='https://t.me/TeamEvamaria'>Eva Mari Team</a> A amazing combination of this repo
+- Thanks To <a href='https://t.me/sangeeth006'>Sangeeth</a> To create me 
 - Thanks To All Everyone In This Journey"""
 
     BATCH_TXT = """The Batch Module
