@@ -453,15 +453,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ɪɴ yᴏᴜʀ ɢʀᴏᴜᴩ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FilmPiratesGroup')
-            ],[
-            InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='help'),
+            InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='mod'),
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-            InlineKeyboardButton('📢ᴄʜᴀɴɴᴇʟ', url='https://t.me/FilmPiratesOfficial')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -471,34 +464,51 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
         await query.answer('Piracy Is Crime')
+    elif query.data == "mod":
+        buttons = [[
+            InlineKeyboardButton('MODULES', callback_data='help'),
+            InlineKeyboardButton('EXTRA', callback_data='extra')
+            ],[
+            InlineKeyboardButton('ADMIN ONLY', callback_data='admin'),
+            InlineKeyboardButton('CREATORS', callback_data='cor')
+            ],[
+            InlineKeyboardButton('GROUP', callback_data='group'),
+            InlineKeyboardButton('CHANNEL', callback_data='channel')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='start'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.MOD_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Connect', callback_data='coct'),
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
-            InlineKeyboardButton('G-Trans', callback_data='gtrans'),
+            InlineKeyboardButton('G-Trans', callback_data='gtrans')
             ],[
             InlineKeyboardButton('Info', callback_data='info'),
             InlineKeyboardButton('Inline', callback_data='inline'),
-            InlineKeyboardButton('Memes', callback_data='memes'),
+            InlineKeyboardButton('Memes', callback_data='memes')
             ],[
             InlineKeyboardButton('Paste', callback_data='paste'),
             InlineKeyboardButton('Pin', callback_data='pin'),
-            InlineKeyboardButton('Purge', callback_data='purge'),
-            ],[
-            InlineKeyboardButton('Batch', callback_data='batch'),
-            InlineKeyboardButton('Alive', callback_data='alive'),
+            InlineKeyboardButton('Purge', callback_data='purge')
             ],[
             InlineKeyboardButton('Restrict', callback_data='restric'),
-            InlineKeyboardButton('Search', callback_data='search'),
-            InlineKeyboardButton('Sudo', callback_data='admin'),
+            InlineKeyboardButton('Search', callback_data='search')
             ],[
             InlineKeyboardButton('Share-Text', callback_data='sharetext'),
             InlineKeyboardButton('TTS', callback_data='tts'),
-            InlineKeyboardButton('Torrent', callback_data='torrent'),
+            InlineKeyboardButton('Torrent', callback_data='torrent')
             ],[
             InlineKeyboardButton('TGraph', callback_data='tgraph'),
             InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music'),
+            InlineKeyboardButton('YouTube', callback_data='music')
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
@@ -588,6 +598,63 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.BUTTON_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "extra":
+        buttons = [[
+            InlineKeyboardButton('Batch', callback_data='batch'),
+            InlineKeyboardButton('Alive', callback_data='alive')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.EXTRA_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "cor":
+        buttons = [[
+            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.COR_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "group":
+        buttons = [[
+            InlineKeyboardButton('Batch', callback_data='batch'),
+            InlineKeyboardButton('Alive', callback_data='alive')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "group":
+        buttons = [[
+            InlineKeyboardButton('Batch', callback_data='batch'),
+            InlineKeyboardButton('Alive', callback_data='alive')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CHANNEL_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
