@@ -222,6 +222,10 @@ All the pin related commands can be found here; keep your chat up to date on the
 • /alive - check me alive or dead🤧
 Just for a rasam😂"""
 
+    GROUP_TXT = """𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:"""
+
+    CHANNEL_TXT = """𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:"""
+
     EXTRA_TXT = """Extra Modulbot
 NOTE:
 these are the extra features of this bot
