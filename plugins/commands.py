@@ -46,7 +46,7 @@ async def start(client, message):
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg")
+        await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -83,7 +83,7 @@ async def start(client, message):
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg")
+        await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
