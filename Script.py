@@ -222,6 +222,23 @@ All the pin related commands can be found here; keep your chat up to date on the
 • /alive - check me alive or dead🤧
 Just for a rasam😂"""
 
+    EXTRA_TXT = """Extra Modulbot
+NOTE:
+these are the extra features of this bot
+"""
+
+    MOD_TXT = """
+𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:
+"""
+
+    COR_TXT = """Creators ❤
+- Thanks To Dan For His Awesome Library
+- Thanks To Mahesh For His Awesome Media-Search-bot
+- Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome Unlimited Filter Bot And AutoFilterBoT
+- Thanks To [Eva](https://t.me/TeamEvamaria) A amazing combination of this repo
+- Thanks To [Sangeeth](https://t.me/sangeeth006) To create me 
+- Thanks To All Everyone In This Journey"""
+
     BATCH_TXT = """The Batch Module
 
 - Add Bot To The From Channel as admin
