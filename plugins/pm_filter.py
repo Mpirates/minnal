@@ -458,7 +458,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FilmPiratesGroup')
             ],[
-            InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='help'),
+            InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='mod'),
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -529,7 +529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Source', callback_data='source')
             ],[
-            InlineKeyboardButton('❓️Help', callback_data='help')
+            InlineKeyboardButton('❓️Help', callback_data='mod')
             ],[
             InlineKeyboardButton('Back', callback_data='start'),
             InlineKeyboardButton('🔐Close', callback_data='close_data')
