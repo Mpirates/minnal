@@ -514,7 +514,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
-            InlineKeyboardButton('« Back', callback_data='start')
+            InlineKeyboardButton('« Back', callback_data='mod')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -612,7 +612,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Memes', callback_data='memes'),
             InlineKeyboardButton('Inline', callback_data='inline')
             ],[
-            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('« Back', callback_data='mod'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -624,7 +624,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "cor":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('« Back', callback_data='mod'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -639,7 +639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("GROUP 1", url="https://t.me/FilmPiratesGroup"),
             InlineKeyboardButton("GROUP 2", url="https://t.me/MF_Movieschat")
             ],[
-            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('« Back', callback_data='mod'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -657,7 +657,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Channel 3", url="https://t.me/FPMarval"),
             InlineKeyboardButton("Channel 4", url="https://t.me/FilmPiratesOfficial")
             ],[
-            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('« Back', callback_data='mod'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -669,7 +669,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "batch":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
+            InlineKeyboardButton('« Back', callback_data='mod')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -680,7 +680,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "alive":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
+            InlineKeyboardButton('« Back', callback_data='mod')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -785,7 +785,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='help')
+            InlineKeyboardButton('« Back', callback_data='mod')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
