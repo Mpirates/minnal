@@ -631,8 +631,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group":
         buttons = [[
-            InlineKeyboardButton('Batch', callback_data='batch'),
-            InlineKeyboardButton('Alive', callback_data='alive')
+            InlineKeyboardButton("GROUP 1", url="https://t.me/FilmPiratesGroup"),
+            InlineKeyboardButton("GROUP 2", url="https://t.me/MF_Movieschat")
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
@@ -644,10 +644,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "group":
+    elif query.data == "channel":
         buttons = [[
-            InlineKeyboardButton('Batch', callback_data='batch'),
-            InlineKeyboardButton('Alive', callback_data='alive')
+            InlineKeyboardButton("Channel 1", url="https://t.me/FPHDMOVE"),
+            InlineKeyboardButton("Channel 2", url="https://t.me/FilimPiratesSeries")
+            ],[
+            InlineKeyboardButton("Channel 3", url="https://t.me/FPMarval"),
+            InlineKeyboardButton("Channel 4", url="https://t.me/FilmPiratesOfficial")
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
