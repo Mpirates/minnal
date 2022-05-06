@@ -506,7 +506,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('« Back', callback_data='mod'),
             InlineKeyboardButton('Page 1', callback_data='mod'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
+            InlineKeyboardButton('Next', callback_data='ne')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -546,7 +546,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Page 2', callback_data='mod'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
+            InlineKeyboardButton('Next', callback_data='nex')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
