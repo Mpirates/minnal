@@ -475,7 +475,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('EXTRA', callback_data='extra')
             ],[
             InlineKeyboardButton('ADMIN ONLY', callback_data='admin'),
-            InlineKeyboardButton('CREATORS', callback_data='cor')
+            InlineKeyboardButton('INFO', callback_data='cor')
             ],[
             InlineKeyboardButton('GROUP', callback_data='group'),
             InlineKeyboardButton('CHANNEL', callback_data='channel')
@@ -504,17 +504,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Pin', callback_data='pin'),
             InlineKeyboardButton('Purge', callback_data='purge')
             ],[
-            InlineKeyboardButton('Share-Text', callback_data='sharetext'),
-            InlineKeyboardButton('TTS', callback_data='tts'),
-            InlineKeyboardButton('Torrent', callback_data='torrent')
-            ],[
-            InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music')
-            ],[
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
-            InlineKeyboardButton('« Back', callback_data='mod')
+            InlineKeyboardButton('« Back', callback_data='mod'),
+            InlineKeyboardButton('Page 1', callback_data='mod'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -534,6 +526,47 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "ne":
+        buttons = [[
+            InlineKeyboardButton('Share-Text', callback_data='sharetext'),
+            InlineKeyboardButton('TTS', callback_data='tts'),
+            InlineKeyboardButton('Torrent', callback_data='torrent')
+            ],[
+            InlineKeyboardButton('Batch', callback_data='batch'),
+            InlineKeyboardButton('Alive', callback_data='alive'),
+            InlineKeyboardButton('Memes', callback_data='memes')
+            ],[
+            InlineKeyboardButton('TGraph', callback_data='tgraph'),
+            InlineKeyboardButton('URL Short', callback_data='shortner'),
+            InlineKeyboardButton('YouTube', callback_data='music')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='help'),
+            InlineKeyboardButton('Page 2', callback_data='mod'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.NE_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "nex":
+        buttons = [[
+            InlineKeyboardButton('Zombies', callback_data='zombies'),
+            InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='ne'),
+            InlineKeyboardButton('Page 3', callback_data='mod'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.NEX_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -606,10 +639,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('Batch', callback_data='batch'),
-            InlineKeyboardButton('Alive', callback_data='alive')
-            ],[
-            InlineKeyboardButton('Memes', callback_data='memes'),
             InlineKeyboardButton('Inline', callback_data='inline')
             ],[
             InlineKeyboardButton('« Back', callback_data='mod'),
