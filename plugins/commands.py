@@ -48,9 +48,9 @@ async def start(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            photo=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode='html',
+            photo=random.choice(PICS)
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
@@ -86,9 +86,9 @@ async def start(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            photo=random.choice(PICS),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode='html',
+            photo=random.choice(PICS)
         )
         return
     data = message.command[1]
