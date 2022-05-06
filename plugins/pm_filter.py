@@ -496,7 +496,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
             InlineKeyboardButton('G-Trans', callback_data='gtrans')
             ],[
-            InlineKeyboardButton('Restrict', callback_data='restric'),
+            InlineKeyboardButton('MUTE', callback_data='restric'),
             InlineKeyboardButton('Info', callback_data='info'),
             InlineKeyboardButton('Search', callback_data='search')
             ],[
@@ -538,11 +538,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Batch', callback_data='batch'),
             InlineKeyboardButton('Alive', callback_data='alive'),
-            InlineKeyboardButton('Memes', callback_data='memes')
+            InlineKeyboardButton('Fun', callback_data='memes')
             ],[
             InlineKeyboardButton('TGraph', callback_data='tgraph'),
             InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music')
+            InlineKeyboardButton('Music', callback_data='music')
             ],[
             InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('Page 2', callback_data='mod'),
@@ -557,8 +557,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "nex":
         buttons = [[
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
+            InlineKeyboardButton('Kick', callback_data='zombies'),
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
             ],[
             InlineKeyboardButton('« Back', callback_data='ne'),
             InlineKeyboardButton('Page 3', callback_data='mod'),
