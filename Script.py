@@ -226,6 +226,10 @@ Just for a rasam😂"""
 
     CHANNEL_TXT = """𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:"""
 
+    NE_TXT = """𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:"""
+
+    NEX_TXT = """𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:"""
+
     EXTRA_TXT = """Extra Modulbot
 NOTE:
 these are the extra features of this bot
