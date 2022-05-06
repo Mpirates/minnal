@@ -46,10 +46,10 @@ async def start(client, message):
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+            parse_mode='html',
         await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html',
             photo=random.choice(PICS)
         )
         return
@@ -84,10 +84,10 @@ async def start(client, message):
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+            parse_mode='html',
         await message.reply_photo(
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html',
             photo=random.choice(PICS)
         )
         return
